@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="959.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.model.student.StudentAttendanceView.StudentAttedanceView">
+   <children>
+      <BorderPane>
+         <top>
+            <AnchorPane prefHeight="66.0" prefWidth="1094.0" style="-fx-background-color: WHITE; -fx-border-color: #000; -fx-border-width: .4px .4px .4px 0px;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="61.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/mylogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="61.0" layoutY="19.0" text="J-NANA S&amp;A" textFill="#068a1e">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="23.0" prefWidth="1094.0" style="-fx-background-color: #3186ae;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="465.0" prefWidth="1094.0" style="-fx-background-color: #f2f2f2; -fx-border-color: #000; -fx-border-width: .4px .4px .4px 0px;" stylesheets="@../../../../css/application.css" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="654.0" layoutY="19.0" prefHeight="241.0" prefWidth="256.0" stylesheets="@../../../../css/application.css">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="white-bg" />
+                     </styleClass>
+                     <children>
+                        <ImageView fx:id="myimageview" fitHeight="225.0" fitWidth="219.0" layoutX="22.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../images/PROFILE.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="76.0" layoutY="58.0" prefHeight="31.0" prefWidth="108.0" text="Std-ID     :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtname" layoutX="219.0" layoutY="114.0" prefHeight="31.0" prefWidth="386.0" text="kjhj,j" textFill="#139625">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="76.0" layoutY="114.0" prefHeight="31.0" prefWidth="106.0" text="NAME    :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="71.0" layoutY="176.0" prefHeight="31.0" prefWidth="107.0" text="GENDER:">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="238.0" prefHeight="31.0" prefWidth="109.0" text="CLASS    :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtid" layoutX="219.0" layoutY="56.0" prefHeight="31.0" prefWidth="386.0" text="kjhj,j" textFill="#ee160b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtgender" layoutX="219.0" layoutY="174.0" prefHeight="31.0" prefWidth="386.0" text="kjhj,j" textFill="#139625">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtclass" layoutX="219.0" layoutY="237.0" prefHeight="31.0" prefWidth="386.0" text="kjhj,j" textFill="#139625">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="294.0" prefHeight="31.0" prefWidth="109.0" text="TERM     :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtterm" layoutX="219.0" layoutY="293.0" prefHeight="31.0" prefWidth="386.0" text="kjhj,j" textFill="#139625">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="358.0" prefHeight="31.0" prefWidth="109.0" text="HOUSE   :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txthouse" layoutX="219.0" layoutY="357.0" prefHeight="31.0" prefWidth="312.0" text="kjhj,j" textFill="#139625">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="565.0" layoutY="374.0" prefHeight="31.0" prefWidth="172.0" text="DAYS PRESENT">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="days" layoutX="774.0" layoutY="373.0" prefHeight="31.0" prefWidth="70.0" text="kjhj,j" textFill="#139625">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="860.0" layoutY="374.0" prefHeight="31.0" prefWidth="83.0" text="DAYS">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="740.0" layoutY="372.0" prefHeight="31.0" prefWidth="26.0" text=" :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="638.0" layoutY="277.0" prefHeight="31.0" prefWidth="295.0" text="ATTENDANCE DETAILS" textFill="#ee160b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="566.0" layoutY="326.0" prefHeight="31.0" prefWidth="202.0" text="ACADEMIC YEAR :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtyear" layoutX="784.0" layoutY="326.0" prefHeight="31.0" prefWidth="102.0" text="kjhj,j" textFill="#139625">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

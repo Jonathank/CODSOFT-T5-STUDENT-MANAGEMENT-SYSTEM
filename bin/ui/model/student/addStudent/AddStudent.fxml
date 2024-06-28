@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.model.student.addStudent.AddStudentController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane prefHeight="66.0" prefWidth="1094.0" style="-fx-background-color: WHITE; -fx-border-color: #000; -fx-border-width: .4px .4px .4px 0px;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="61.0" layoutX="1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/mylogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="63.0" layoutY="17.0" text="J-NANA S&amp;A" textFill="#068a1e">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="567.0" layoutY="17.0" prefHeight="34.0" prefWidth="323.0" text="STUDENT DETAILS" textFill="#068a1e">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="23.0" prefWidth="1094.0" style="-fx-background-color: #3186ae;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="572.0" prefWidth="1094.0" style="-fx-background-color: #f2f2f2; -fx-border-color: #000; -fx-border-width: .4px .4px .4px 0px;" stylesheets="@../../../../css/application.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="17.0" layoutY="11.0" text="FIRST NAME">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtfname" layoutX="169.0" layoutY="9.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <TableView fx:id="table" layoutX="-1.0" layoutY="324.0" prefHeight="193.0" prefWidth="1094.0" stylesheets="@../../../../css/application.css">
+                    <columns>
+                        <TableColumn fx:id="CID" prefWidth="138.0" text="STUDENT ID" />
+                        <TableColumn fx:id="CFN" prefWidth="143.0" text="FIRST NAME" />
+                        <TableColumn fx:id="CLN" prefWidth="154.0" text="LAST NAME" />
+                        <TableColumn fx:id="CG" prefWidth="134.0" text="GENDER" />
+                        <TableColumn fx:id="CB" prefWidth="155.0" text="BIRTH DATE" />
+                        <TableColumn fx:id="CC" prefWidth="97.0" text="CLASS" />
+                        <TableColumn fx:id="CH" prefWidth="125.0" text="HOUSE" />
+                        <TableColumn fx:id="CN" prefWidth="148.0" text="NATIONALITY" />
+                    </columns>
+                  </TableView>
+                  <AnchorPane layoutX="808.0" layoutY="10.0" prefHeight="225.0" prefWidth="268.0" stylesheets="@../../../../css/application.css">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="white-bg" />
+                     </styleClass>
+                     <children>
+                        <ImageView fx:id="myimageview" fitHeight="218.0" fitWidth="212.0" layoutX="29.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../images/PROFILE.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="17.0" layoutY="62.0" text="LAST NAME">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtlname" layoutX="169.0" layoutY="60.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <Label layoutX="15.0" layoutY="114.0" text="OTHER NAME">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtoname" layoutX="169.0" layoutY="112.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <Label layoutX="17.0" layoutY="167.0" text="GENDER">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="219.0" text="BIRTH DATE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="271.0" text="EMAIL">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtemail" layoutX="169.0" layoutY="269.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <Label layoutX="427.0" layoutY="61.0" text="HOUSE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="424.0" layoutY="112.0" text="PARENT EMAIL">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtpemail" layoutX="583.0" layoutY="110.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <Label layoutX="427.0" layoutY="164.0" text="PARENT TELE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtptele" layoutX="583.0" layoutY="162.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <Label layoutX="426.0" layoutY="219.0" text="ADDRESS">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtaddress" layoutX="583.0" layoutY="217.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <Label layoutX="427.0" layoutY="270.0" text="NATIONALITY">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtnat" layoutX="583.0" layoutY="268.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <Label layoutX="426.0" layoutY="11.0" text="CLASS">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnsave" layoutX="924.0" layoutY="526.0" mnemonicParsing="false" onAction="#savestudent" prefHeight="37.0" prefWidth="127.0" styleClass="login-btn" stylesheets="@../../../../css/application.css" text="SAVE" />
+                  <Button fx:id="btnclear" layoutX="652.0" layoutY="526.0" mnemonicParsing="false" onAction="#clearbutton" prefHeight="37.0" prefWidth="127.0" styleClass="login-btn" stylesheets="@../../../../css/application.css" text="CLEAR" />
+                  <Button fx:id="btnupload" layoutX="849.0" layoutY="278.0" mnemonicParsing="false" onAction="#uploadphoto" prefHeight="37.0" prefWidth="201.0" styleClass="login-btn" stylesheets="@../../../../css/application.css" text="UPLOAD PHOTO" />
+                  <Label fx:id="txtid" alignment="CENTER" layoutX="812.0" layoutY="245.0" prefHeight="26.0" prefWidth="264.0" textFill="#e10c0c">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="datepicker" layoutX="169.0" layoutY="217.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <ComboBox fx:id="combogender" layoutX="169.0" layoutY="163.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <ComboBox fx:id="comboclass" layoutX="583.0" layoutY="9.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+                  <ComboBox fx:id="combohouse" layoutX="583.0" layoutY="56.0" prefHeight="31.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../../../../css/application.css" />
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</StackPane>
