@@ -34,7 +34,7 @@ Time time,
 fulldate varchar(255)
 );
 
-ALTER table Attendance ADD FOREIGN KEY (student_id) REFERENCES students(Student_ID);
+ALTER table Attendance ADD FOREIGN KEY (student_id) REFERENCES students(Student_ID) ON DELETE CASCADE;
 
 create view attendance_view AS 
 SELECT s.student_id, s.first_name, s.last_name, s.gender,s.house,s.photo,a.class, a.term,a.weekday,a.themonth,a.theyear
